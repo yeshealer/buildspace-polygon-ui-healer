@@ -1,0 +1,119 @@
+.polygon_btn {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: linear-gradient(to right, rgb(131, 0, 218), rgb(194, 66, 253));
+    background-image: url("../image/polygon.jpg");
+    background-size: cover;
+    background-position: center;
+    line-height: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    z-index: inherit;
+    transition: all 500ms ease;
+    -webkit-clip-path: polygon(50% 0, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -moz-clip-path: polygon(50% 0, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -ms-clip-path: polygon(50% 0, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: polygon(50% 0, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    &:hover {
+        color: #fff;
+        text-shadow: 0 0 10px rgb(255, 0, 255);
+        font-size: 18px;
+    }
+}
+
+.account_btn {
+    margin: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms ease;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+/* snackbar start */
+
+#snackbar {
+    visibility: hidden;
+    width: 80px;
+    margin-left: -100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    right: 25px;
+    color: white;
+    top: 85px;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        right: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        right: 25px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        right: 25px;
+        opacity: 1;
+    }
+
+    to {
+        right: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        right: 25px;
+        opacity: 1;
+    }
+
+    to {
+        right: 0;
+        opacity: 0;
+    }
+}
+
+/* snackbar end */

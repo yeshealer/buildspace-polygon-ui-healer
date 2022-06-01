@@ -1,0 +1,52 @@
+.input_group {
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    width: -webkit-fill-available;
+}
+
+.record_input {
+    padding: 10px;
+    input {
+        width: 100%;
+    }
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 20px 45px;
+    border: none;
+    background-image: linear-gradient(to right, #da22ff 0%, #9900ff 51%, #da22ff 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.edit-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.link {
+    color: white;
+    text-decoration: dotted;
+}
+
+.domainLink {
+    background-color: rgba($color: white, $alpha: 0.1);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
